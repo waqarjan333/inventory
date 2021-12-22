@@ -1,0 +1,41 @@
+<?php
+// Heading 
+$_['text_invoice'] = 'ایس -انوائس';
+$_['text_sr_invoice'] = 'ایس ار-انوائس';
+$_['text_telephone'] = 'ٹیلیفون';
+$_['text_mobile'] = 'موبایٔل  :' ;
+$_['text_mobile2'] = 'موبایٔل2';
+$_['text_cust_address'] = 'پتہ';
+$_['text_invoice_date'] = 'بل تاریخ';
+$_['text_printed_date'] = 'پرنٹ تاریخ';
+$_['text_invoice_no'] = 'بل ';
+$_['text_sr_invoice_no'] = '#ایس ار-انوائس';
+$_['text_bill_to'] = 'بل بنام :';
+$_['text_region'] = 'علاقہ';
+$_['text_warehouse'] = 'گودام';
+$_['text_salesrep'] = 'سیلز نمایندہ';
+$_['text_s_no'] = ' نمبر';
+$_['text_description'] = 'اشیاہ کا نام';
+$_['text_uom'] = 'یونٹ';
+$_['text_net'] = 'نیٹ';
+$_['text_qty'] = 'تعداد';
+$_['text_rate'] = 'نرخ';
+$_['text_discount'] = 'رعایت';
+$_['text_discount_in'] = 'رعایت ان';
+$_['text_deduction'] = 'کٹوتی';
+$_['text_deduction_in'] = 'کٹوتی ان ';
+$_['text_weight'] = 'وزن';
+$_['text_amount'] = 'رقم';
+$_['text_total_qty'] = 'کل تعداد';
+$_['text_sub_total'] = 'ذیلی کل';
+$_['text_discount'] = 'رعایت';
+$_['text_total'] = 'کل';
+$_['text_paid'] = 'ادا کی';
+$_['text_balance'] = 'بیلنس';
+$_['text_pre_balance'] = 'پچھلا بیلنس';
+$_['text_grand_total'] = 'گرینڈ کل';
+$_['text_rs'] = 'قیمت';
+$_['terms_condition_heading'] = 'شرائط و ضوابط';
+$_['terms_condition_text'] = 'واپسی ادائگی تئن دن میں<br>واپسی نہیں';
+$_['text_footer'] = 'بنیاد ڈالی by Aursoft <br/> http://www.aursoft.com';
+?>

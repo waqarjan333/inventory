@@ -1,0 +1,22 @@
+/* Define page size. Requires print-area adjustment! */
+@page{
+	margin: 5mm 1mm 5mm 1mm;
+}
+body {
+    margin:     0;
+    padding:    0;
+}
+thead, tfoot { display: table-row-group }
+.header .date_row{
+    width:350px;
+}
+.header .date_row span.date{
+    width:200px;
+}
+
+.logo img{
+    display:none !important;
+}
+.logo {
+    width:200px;
+}

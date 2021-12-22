@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+/*
+@page {
+  margin: 7mm 5mm 7mm 5mm !important;
+}*/
+body{
+    font-family: 'Verdana';
+    font-size:12px;    
+     /*width: 100% !important; */
+}
+ #customers_mobile{
+    margin-bottom: 3px !important;
+ }
+.dot-matrix.full{
+    width:800px !important;
+}
+
+.dot-matrix .headbar{
+    padding: 5px 10px  5px 0px;
+    text-transform: uppercase;        
+}
+
+.dot-matrix .headbar .invoice-logo{
+    border: 0 none;        
+    vertical-align: middle;
+    width:100px;
+    height:100px;
+    margin-right:5px;
+    display: inline-block;
+}
+.dot-matrix td{
+    vertical-align: top;
+}
+.dot-matrix .logo{
+    float:left;
+    margin-bottom: 4px !important;
+}
+.dot-matrix .inv-head{
+    float:right;
+}
+.dot-matrix .header-table{
+     /*width:700px !important;*/
+     font-size: 11px !important;  
+     font-weight: bold;
+     line-height: 15px;
+}
+.dot-matrix .header-table .bottom-space{
+   width:150px !important;
+   
+}    
+.dot-matrix {
+   /*width: 700px !important; */
+   margin:0px auto !important;       
+}
+.dot-matrix .inv-header{
+    width:/*700px*/ !important;
+    }
+.dot-matrix .header-table .bottom-space{
+    width:280px !important;        
+    margin-bottom: 4px !important;        
+}
+.dot-matrix.full .header-table .bottom-space{
+    margin-bottom: 4px !important;
+    width:150px !important;
+}
+.dot-matrix .header-table td:first-child{
+    width:180px !important;    
+    padding-right: 10px;
+}
+
+.dot-matrix .header-table td{
+    line-height: 16px !important;
+}
+
+.dot-matrix table.inv-heading tr td{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dot-matrix table.inv-heading tr th{
+    font-size:12px !important;    
+    line-height: 12px !important;
+    
+}
+
+.dot-matrix table.inv-heading tr td{
+    font-size:12px !important;
+    line-height: 14px !important;
+    //padding-right:10px !important;
+}    
+.dot-matrix .headbar{
+    font-size: 14px !important;
+}    
+.dot-matrix .emph td{
+    font-size:14px !important;
+}
+.dot-matrix table.total_table{
+    width:250px !important;
+    margin-bottom:50px !important;
+    padding-bottom: 20px !important;            
+}
+.dot-matrix table.register_table{
+    width:400px !important;
+    margin-bottom:50px !important;
+    padding-bottom: 20px !important;
+     border-collapse: collapse;
+                
+}
+.dot-matrix table.total_table td{
+    font-size:12px;
+     border: 1px dashed gray !important;
+     /*border-style:  !important;*/
+} 
+.dot-matrix table.register_table td{
+    font-size:9px;
+     border-bottom:  1px solid gray !important;
+     /*border-collapse: collapse !important;*/
+     /*border-style:  !important;*/
+     padding: 1px !important;
+}
+ .dot-matrix table.register_table th{
+    font-size:10px;
+     border-bottom:  1px solid gray !important;
+     border-right:  1px dashed gray !important;
+     /*border-collapse: collapse !important;*/
+     /*border-style:  !important;*/
+     padding: 0px !important;
+}    
+.dot-matrix td{
+    line-height: 14px !important;
+}
+
+.dot-matrix .invoice-body{
+    //padding-left:100px !important;
+    /*width: 690px !important;*/
+}
+.english{
+    margin-left:60px !important;
+}
+.dot-matrix .pos-right-align{
+    text-align: right;
+}
+
+.dot-matrix  .bottom-divider,.dot-matrix  .top-divider{
+    width:690px;overflow:hidden;
+}
+.dot-matrix  .bottom-divider{
+    //padding-left:8px;    
+    margin-bottom: 30px;
+}
+.dot-matrix  .top-divider{
+    width:690px;
+    //padding-left:106px;
+    display: block;
+}
+.total_amount{
+    text-align: right;
+    font-weight: bold;
+    padding-right: 2px;
+}
+
+.total_text{
+    font-weight: bold;
+    padding-left:10px;
+    font-style: italic;
+}
+
+.terms_conditions{
+    clear: both;
+    padding-top:10px;
+    text-align: left;
+}
+.terms_conditions ul, .terms_conditions ol{
+    padding-left:15px;
+}
+.terms_condition_heading{
+    font-family: 'Verdana';
+    font-size:10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.terms_condition_text{
+    font-family: 'Verdana';
+    font-size:9px;   
+}
+
+.thank_message{
+    clear: both;
+/*    padding-top:10px;*/
+    /*margin-bottom: -10px !important;*/
+    text-align: center;
+    transform:translateY(-55%) !important;
+}
+.aursoft_marekting{
+    font-size:10px;
+    color:#aaa;
+    font-style:italic;
+}
+.dot-matrix .full{
+    padding-left: 0px !important;
+    width: 100% !important;
+}
+
+.dot-matrix .full table.inv-heading tr th{
+    width: auto !important;
+}
+
+.custom{
+    clear:both;
+    /*padding:5px;*/
+    padding: 0;
+    margin: 0;
+    /*margin-bottom:40px !important;*/
+    /*width:700px;*/
+    margin-bottom: 80px !important;
+    word-break: break-all;
+    transform:translateY(-55%) !important;
+}
+
+.receipt-large-body td{
+    border-bottom: 1px dashed black;
+    
+}
+.receipt-large-body td:first-child{
+    border-left: 1px dashed black !important;
+}
+.receipt-large-body td:last-child{
+    border-right:  1px dashed black !important;
+}
+.receipt-large-body tr:last-child td{
+    border-bottom: 0px;
+}
+.urdu1{
+    position: absolute;right: -40px;
+}
+
+.td-description{
+    /*text-align: center;*/
+     text-align:left !important;padding-left: 5px;
+}
+.urdu1{
+    position: absolute;left: 575px !important;
+}
+
+.prevoiusHide{
+    display: none  !important;
+    
+}

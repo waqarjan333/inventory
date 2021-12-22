@@ -1,0 +1,133 @@
+@charset "utf-8";
+body{
+    font-family: 'Verdana';
+    font-size:12px;    
+}
+
+
+.dot-matrix .headbar{
+    padding: 5px 10px  5px 0px;
+    text-transform: uppercase;        
+}
+
+.dot-matrix .headbar .invoice-logo{
+    border: 0 none;        
+    vertical-align: middle;
+    width:100px;
+    height:100px;
+    margin-right:5px;
+    display: inline-block;
+}
+.dot-matrix td{
+    vertical-align: top;
+}
+.dot-matrix .logo{
+    float:left;
+}
+.dot-matrix .inv-head{
+    float:right;
+}
+.dot-matrix .header-table{
+     width:700px !important;
+     font-size: 11px !important;  
+     font-weight: bold;
+     line-height: 15px;
+}
+.dot-matrix .header-table .bottom-space{
+   width:120px !important;
+}    
+.dot-matrix {
+   width: 700px !important; 
+   margin:0px auto !important;       
+}
+.dot-matrix .inv-header{
+    width:700px !important;
+    }
+.dot-matrix .header-table .bottom-space{
+    width:280px !important;        
+    margin-bottom: 14px !important;        
+}
+.dot-matrix .header-table td:first-child{
+    width:180px !important;    
+    padding-right: 10px;
+}
+
+.dot-matrix .header-table td{
+    line-height: 16px !important;
+}
+
+.dot-matrix table.inv-heading tr td{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dot-matrix table.inv-heading tr th{
+    font-size:12px !important;    
+    line-height: 12px !important;
+    width:100%;
+}
+
+.dot-matrix table.inv-heading tr td{
+    font-size:12px !important;
+    line-height: 14px !important;
+    padding-right:10px !important;
+}    
+.dot-matrix .headbar{
+    font-size: 14px !important;
+}    
+.dot-matrix .emph td{
+    font-size:14px !important;
+}
+.dot-matrix table.total_table{
+    width:250px !important;
+    margin-top:10px !important;            
+}
+.dot-matrix table.total_table td{
+    font-size:12px;
+}    
+.dot-matrix td{
+    line-height: 14px !important;
+}
+
+.dot-matrix .invoice-body{
+    padding-left:100px !important;
+    width: 600px !important;
+}
+
+.dot-matrix .pos-right-align{
+    text-align: right;
+}
+
+.dot-matrix  .bottom-divider,.dot-matrix  .top-divider{
+    width:590px;overflow:hidden;
+}
+.dot-matrix  .bottom-divider{
+    padding-left:5px;    
+    margin-top: 10px;
+}
+.dot-matrix  .top-divider{
+    width:590px;
+    padding-left:106px;
+    display: block;
+}
+.total_qty,.total_amount{
+    text-align: right;
+    font-weight: bold;
+    padding-right: 2px;
+}
+.total_text{
+    font-weight: bold;
+    padding-left:10px;
+    font-style: italic;
+}
+
+.thank_message{
+    clear: both;
+    padding-top:20px;
+    text-align: center;
+}
+.aursoft_marekting{
+    font-size:10px;
+    color:#aaa;
+    font-style:italic;
+}

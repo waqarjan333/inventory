@@ -1,0 +1,319 @@
+/* Inventory Reports CSS */
+body{
+    font-family: 'Arial', 'Calibri', 'Verdana';
+    font-size:12px;
+}
+.accounts {
+    font-family: "HelveticaNeue","Helvetica Neue","Helvetica","Arial",sans-serif​;
+    font-size: 11px;
+}
+.header{
+   padding: 5px 5px;
+}
+.middle{
+    margin: 30px auto;
+    text-align: center;
+    width: 400px;
+}
+.accounts .body{
+    text-align: left;
+}
+.accounts .head_asset{
+    
+}
+.right{
+    text-align: right;
+}
+.accounts .current-asset td:first-child div,.accounts .head-l td:first-child div, .accounts .total-l td:first-child div,
+.accounts .head-equity td:first-child div,.accounts .total-equity td:first-child div{
+    margin-left:10px;
+}
+.accounts .othter-asset td:first-child div,.accounts .current-l td:first-child div,.accounts .total-cur-l td:first-child div,.accounts .head-cogs td:first-child div,.accounts .head_return td:first-child div{
+    margin-left:15px;    
+}
+.accounts .total-cur-l td:last-child div,.accounts .total-cur-asset td:last-child div,
+.accounts .total-l td:last-child div,.accounts .total-equity td:last-child div{
+    border-bottom: 1px solid #000;
+}
+.accounts .total-le td:last-child div,.accounts .total-asset td:last-child div{
+    border-bottom: 2px #000 solid;
+}
+.accounts .total-cur-asset td:first-child div{
+    margin-left:10px;
+}
+.accounts .total-asset{    
+}
+.accounts .cur-asset td:first-child div,.accounts .cur-liability td:first-child div,.accounts .cur-equity td:first-child div{
+    margin-left: 20px;
+}
+
+.accounts .net_income td{
+    font-style: italic;
+    padding-top:15px;
+    font-weight: bold;
+}
+
+.accounts .net_income td:last-child div{
+    margin-left: -5px;    
+    border-bottom: 2px #000 double;
+}
+
+.accounts .head-leq{}
+
+.accounts .report_table div{
+    line-height: 14px;
+}
+
+.header #report_name{
+    font-size:20px;
+    color:#ffa72b;
+}
+
+.accounts #report_name{
+    font-size:11px;
+    color:#000;
+    margin:5px 0px;
+}
+
+.header .date_row{
+    font-size:12px;
+    color:#ffa72b;
+    padding-top:5px;
+}
+
+.header .date_row .date{
+    font-size:12px;
+    color:#497ab4;
+    display: inline-block;
+    float:right;
+}
+
+.header .logo{
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    font-size: 18px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+img{
+    vertical-align: middle;
+    border: 0 none;
+    height: auto;
+    max-width: 100%;
+}
+.header .logo img{
+    height:80px;
+    width:80px;
+    margin-right: 10px;
+}
+
+#col_left{
+    float:left;
+    margin-top:10px;
+    margin-left: 17px !important;
+}
+#col_right{
+    float:right;
+}
+.body{
+    clear:both;
+    padding: 5px 20px;
+    margin-top:10px;
+}
+
+table.report_table {
+    width:100%;
+    border: 0;
+    border-spacing: 0;
+    margin-top:10px;
+}
+
+.accounts table.report_table{
+    margin-top:0px;
+}
+
+table.report_table thead td{    
+    border-bottom: 2px solid #949494;
+    border-top: 2px solid #949494;
+    color:#949494;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding:3px 7px;
+}
+table.report_table tbody td {
+    border: 0px;
+    padding:3px 7px;
+    line-height: 22px;
+}
+
+.exp_row{
+    color:#ffa72b;
+}
+
+table.report_table tbody td.noresult{
+    text-align: center;
+    padding:50px;
+}
+table.report_table tbody td.cat_name{
+    font-size: 13px;
+    line-height: 24px;
+    background-color: #F6F6F6;
+    color:#9E9E9E;
+}
+table.report_table tbody td .prod_name{
+    margin-left: 7px;
+}
+table.report_table tbody td .prod_name_unit{
+    /*margin-right:10px;*/
+    margin: 0px;
+    color: red !important;
+}
+table.report_table tbody td.grand_total,
+table.report_table tbody td.cat_total{
+     background-color: #FFF7D6;
+     font-size: 14px;
+     font-weight: bold;
+     color:#333333;
+}
+
+table.report_table tbody td.cat_total{     
+     font-size: 12px;     
+}
+table.report_table tbody td.grand_total,table.report_table tbody td.net_income{
+    border-top: 1px solid #888888;
+    border-bottom: 2px solid #888888;
+}
+
+table.report_table tbody td.line{
+    
+   border-bottom: 2px  solid #888888 !important;
+}
+
+
+table.report_table tbody td.sale_return_row{
+     background-color: rgb(255,167,43);
+     font-size: 14px;
+     font-weight: bold;
+     color:#333333;
+}
+
+table.report_table tbody td.net_income{
+     background-color: #229954 !important;
+     font-size: 14px;
+     font-weight: bold;
+     color:#ffffff;
+}
+
+@media print {
+    .show-in-print{
+        display:table-cell !important;
+    }
+    .not-show-in-print{
+        display:none !important;
+    }
+    td.show-border{
+        border-bottom: 1px solid black !important;
+    }
+}
+
+.accounts .head-report td:first-child div{
+    font-weight: bold;
+    margin-left:-5px;
+}
+.tital-name{
+    text-align: center;
+    font-weight: 900;
+    font-size: 11px;
+  margin-bottom: 2px;
+  border-bottom: double;
+    
+}
+.total-tital{
+    font-size: 12px;
+    font-weight: 900;
+}
+.acc-name{
+    font-size: 12px;
+    padding-bottom: 1px ;
+    margin-left: 10px;
+}
+.acc-value{
+     text-align: right;
+    font-size: 12px;
+    padding-bottom: 1px ;
+}
+.total-text{
+    font-weight: 900;
+    font-size: 11px;
+    text-align: right;
+    border-bottom: double;
+    
+}
+hr{
+    border: 0.5px solid black;
+    margin-top:  0.5px
+}
+.accordion {
+  background-color: transparent;
+  color: #444;
+  cursor: pointer;
+  padding-right: 0px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif​;
+}
+
+.accordionzero {
+  background-color: transparent;
+  color: #444;
+  cursor: pointer;
+  padding-right: 0px;
+  padding-left: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif​;    
+}
+
+.active, .accordion:hover {
+  background-color: transparent;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  width: 100%;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+.active .acc-val{
+    display:none;
+}
+table .agingbody tr td{
+  border: 1px solid !important;
+}
+td #over_limit_detail {
+    width: 20% !important;
+}
+a #item_detail{
+  font-weight: bold;
+  font-size: 14px;
+}

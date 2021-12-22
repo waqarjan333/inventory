@@ -1,0 +1,291 @@
+{
+	"user_id": "",
+	"user_access": {
+		"sale_order" : {
+			"parentlabel" : "Sale Order"
+		},
+		"sale_invoice": {
+			"label": "Sale Invoice",
+			"actions": {
+				"view": true,
+				"edit": true,
+				"print": true,
+                                "gatepass": true
+                                
+			}
+		},
+		"sale_estimate": {
+			"label": "Sale Estimate",
+			"actions": {
+				"view": true,
+				"edit": true,
+				"print": false,
+                                "gatepass": true
+                                
+			}
+		},
+		"sale_return": {
+			"label": "Sale Return",
+			"actions": {
+				"view": true,
+				"edit": true,
+				"print": false
+                                
+			}
+		},
+		"sale_order_list": {
+			"label": "Sale Order List",
+			"actions": {
+				"access": true
+			}
+		},
+		"batch_printing": {
+			"label": "Batch Printing",
+			"actions": {
+				"access": true
+			}
+		},
+		"purchase_order" : {
+			"parentlabel" : "Purchase Order"
+		},
+		"purchase_invoice": {
+			"label": "Purchase Invoice",
+			"actions": {
+				"view": true,
+				"edit": true,
+				"print": false
+			}
+		},
+		"purchase_return": {
+			"label": "Purchase Return",
+			"actions": {
+				"view": true,
+				"edit": true,
+				"print": false
+                                
+			}
+		},
+		"purchase_order_list": {
+			"label": "Purchase Order List",
+			"actions": {
+				"access": true
+			}
+		},
+		"inventory" : {
+			"parentlabel" : "Inventory"
+		},
+		"item": {
+			"label": "Item",
+			"actions": {
+				"view": true,
+				"edit": true,
+				"new" : true
+			}
+		},
+		"productlist": {
+			"label": "Product List",
+			"actions": {
+				"access": true
+			}
+		},
+		"warehouses": {
+			"label": "Warehouses",
+			"actions": {
+				"access": true
+			}
+		},
+		"stocktransfer": {
+			"label": "Stock Transfer",
+			"actions": {
+				"access": true
+			}
+		},
+		"adjuststock": {
+			"label": "Adjust Stock",
+			"actions": {
+				"access": true
+			}
+		},
+		"customers" : {
+			"parentlabel" : "Customers / Vendors"
+		},
+		"newcustomer": {
+			"label": "New Customer",
+			"actions": {
+				"view": true,
+				"edit": true,
+				"add": true
+			}
+		},
+		"newvendor": {
+			"label": "New Vendor",
+			"actions": {
+				"view": true,
+				"edit": true,
+				"add": true
+			}
+		},
+		"customervendorlist": {
+			"label": "Customer / Vendor List",
+			"actions": {
+				"access": true
+			}
+		},
+		"customertypegroup": {
+			"label": "Customer Type/Group",
+			"actions": {
+				"access": true
+			}
+		},
+		"expenses": {
+			"label": "Expenses",
+			"actions": {
+				"access": true
+			}
+		},
+		"reports" : {
+			"parentlabel" : "Reports"
+		},
+		"sale_reports": {
+			"label": "Sale Reports",
+			"parent": "reports",
+			"actions": {
+				"access": true,
+				"print": true,
+				"export": false
+			}
+		},
+		"purchase_reports": {
+			"label": "Purchase Report",
+			"parent": "reports",
+			"actions": {
+				"access": true,
+				"print": true,
+				"export": false
+			}
+		},
+		"inventory_reports": {
+			"label": "Inventory Reports",
+			"parent": "reports",
+			"actions": {
+				"access": true,
+				"print": true,
+				"export": false
+			}
+		},
+		"account_reports": {
+			"label": "Account Reports",
+			"parent": "reports",
+			"actions": {
+				"access": true,
+				"print": true,
+				"export": false
+			}
+		},
+		"accounnt" : {
+			"parentlabel" : "Accounts"
+		},
+		"account_management": {
+			"label": "Accounts",
+			"parent": "accounts",
+			"actions": {
+				"access": true,
+                                "create": true,
+                                "edit": true,
+                                "create": true
+			}
+		},
+		"register": {
+			"label": "Register",
+			"parent": "accounts",
+			"actions": {
+				"access": true
+			}
+		},
+		"journal": {
+			"label": "Journal",
+			"parent": "accounts",
+			"actions": {
+				"access": true,
+                                "create": true,
+                                "edit": true
+			}
+		},
+		"other" : {
+			"parentlabel" : "Other"
+		},
+		"dashboard": {
+			"label": "Dashboard",
+			"actions": {
+				"access": true
+			}
+		},
+		"price_level": {
+			"label": "Price Level",
+			"actions": {
+				"access": true,
+                                "create": true
+			}
+		},
+		"sale_ref": {
+			"label": "Sale Reps",
+			"actions": {
+				"access": true
+			}
+		},
+		"pos": {
+			"label": "Point of Sale",
+			"actions": {
+				"access": true
+			}
+		},
+		"settings": {
+			"label": "Settings",
+			"actions": {
+				"access": true
+			}
+		},
+		"invoice_customization": {
+			"label": "Invoice Customization",
+			"hide": true,
+			"actions": {
+				"access": true
+			}
+		},
+		"warehouse_stocktransfer": {
+			"label": "Warehouse & Stock transfer",
+			"hide": true,
+			"actions": {
+				"access": true
+			}
+		},
+		"checking_credit_card": {
+			"label": "Checking Credit Card",
+			"hide": true,
+			"actions": {
+				"access": true
+			}
+		},
+		"payroll_employees": {
+			"label": "PayRoll & Employees",
+			"hide": true,
+			"actions": {
+				"access": true
+			}
+		},
+		"time_tracking": {
+			"label": "Time Tracking",
+			"hide": true,
+			"actions": {
+				"access": true
+			}
+		},
+		"changing_deleting_trans": {
+			"label": "Changing & Deleting Transaction",
+			"hide": true,
+			"actions": {
+				"access": true
+			}
+		}
+	}
+}

@@ -1,0 +1,155 @@
+DELETE FROM account_chart;
+ALTER TABLE account_chart AUTO_INCREMENT=1;
+
+INSERT INTO `account_chart` (`acc_id`, `acc_name`, `acc_description`, `acc_type_id`, `acc_type`, `opening_balance`, `balance`, `last_changed`, `acc_status`, `acc_cat_id`, `inTrail`) VALUES
+(-1, 'Cash', 'Cash', 3, 0, 0, 0, '2013-04-01 14:57:56', 1, 0, 1),
+(1, 'Inventory Asset', 'Inventory Asset', 11, 0, 0, 0, '2013-04-01 14:57:56', 1, 0, 1),
+(2, 'Cost of Goods Sold', '', 7, 0, 0, 0, '2013-04-01 14:58:28', 1, 0, 1),
+(3, 'Account Receivable', '', 1, 0, 0, 0, '2013-04-01 14:58:28', 1, 0, 1),
+(4, 'Account Payable', '', 2, 0, 0, 0, '2013-04-01 14:58:28', 1, 0, 1),
+(5, 'Sales', '', 4, 0, 0, 0, '2013-04-01 14:58:28', 1, 0, 1),
+(6, 'Opening Balance Equity', '', 12, 0, 0, 0, '2013-04-01 14:58:28', 1, 0, 1),
+(7, 'Furniture and Equipment', '', 13, 0, 0, 0, '2013-04-01 14:58:28', 1, 0, 1),
+(8, 'Uncategorized Income', '', 4, 0, 0, 0, '2013-04-01 14:58:28', 1, 0, 1),
+(9, 'Uncategorized Expense', '', 5, 0, 0, 0, '2013-04-01 14:58:28', 1, 0, 1),
+(10,'Discount', '{{DISCOUNT_ACCOUNT_SYSTEM}}', 5, 0, 0, 0, '2014-10-22 14:57:56', 1, 0, 1),
+(11,'Sales Return', '{{SALE_RETURN_ACCOUNT_SYSTEM}}', '4', '1', '0', '0', '2015-09-18 00:00:00', '1', '0', '1'),
+(12,'Income on Sales Return', '{{SALE_RETRUN_INCONE_ACCOUNT_SYSTEM}}', '4', '0', '0', '0', '2015-09-18 00:00:00', '1', '0', '1'),
+(13,'Purchase Discount', '{{PURCHASE_DISCOUNT_INCOME_ACCOUNT_SYSTEM}}', '4', '0', '0', '0', '2015-09-18 00:00:00', '1', '0', '1'),
+(14, 'Credit Card Expense', '{{CREDIT_CARD_EXPENSE_ACCOUNT_SYSTEM}}', '5', '1', '0', '0', '2015-09-18 00:00:00', '1', '0', '1');
+
+
+DELETE FROM account_journal;
+ALTER TABLE account_journal AUTO_INCREMENT=1;
+
+DELETE FROM account_type;
+ALTER TABLE account_type AUTO_INCREMENT=1;
+INSERT INTO `account_type` (`acc_type_id`, `head_id`, `acc_type_name`, `acc_type_status`, `acc_type_type`) VALUES
+(1, 1, 'Account Receivable', 1, 1),
+(2, 2, 'Account Payable', 1, 1),
+(3, 1, 'Asset', 1, 1),
+(4, 4, 'Income', 1, 1),
+(5, 5, 'Expenses', 1, 1),
+(6, 2, 'Loan', 1, 1),
+(7, 5, 'Cost of Goods Sold', 1, 1),
+(8, 1, 'Bank', 1, 1),
+(9, 4, 'Other Income', 1, 1),
+(10, 5, 'Other Expenses', 1, 1),
+(11, 1, 'Other Current Assets', 1, 1),
+(12, 3, 'Equity', 1, 1),
+(13, 1, 'Fixed Assets', 1, 1),
+(14, 1, 'Receivable Loans', 1, 1),
+(15, 2, 'Payable Loans', 1, 1),
+(16, '1', 'Credit Card Merchant', '1', '1'), 
+(17, '2', 'Credit Card', '1', '1'),
+(18, '2', 'Other Current Liability', '1', '1');
+
+DELETE FROM answer;
+ALTER TABLE answer AUTO_INCREMENT=1;
+INSERT INTO answer (`answer_id` ,`user_id` ,`question_id` ,`answer`) VALUES 
+(NULL , '20', '1', 'test'), 
+(NULL , '20', '2', 'test');
+
+
+DELETE FROM category;
+ALTER TABLE category AUTO_INCREMENT=1;
+INSERT INTO `category` (
+`id` ,
+`name` ,
+`parent_id` ,
+`description` ,
+`status`
+)
+VALUES (
+NULL , 'Default', '0', 'Default Category', '1'
+);
+
+
+DELETE FROM customer;
+ALTER TABLE customer AUTO_INCREMENT=1;
+INSERT INTO `customer` (`cust_id`, `cust_acc_id`, `cust_name`, `cust_ct_name`, `cust_status`, `cust_phone`, `cust_fax`, `cust_email`, `cust_mobile`, `cust_address`, `cust_image`, `cust_price_level`, `cust_credit_limit`) VALUES
+(0, -1, 'Walk In Customer', '', 1, '', '', '', '00000000', '', '', 0, 0);
+UPDATE customer SET cust_id=0 WHERE cust_id=1;
+
+DELETE FROM customer_groups;
+ALTER TABLE customer_groups AUTO_INCREMENT=1;
+INSERT INTO `customer_groups`(`id`, `cust_group_name`, `cust_group_isdefault`, `updated_date`, `created_date`) VALUES (NULL,'Default Group',1,NOW(),NOW());
+
+
+DELETE FROM invoice_payment;
+ALTER TABLE invoice_payment AUTO_INCREMENT=1;
+
+
+
+
+DELETE FROM item;
+ALTER TABLE item AUTO_INCREMENT=1;
+DELETE FROM item_warehouse;
+ALTER TABLE item_warehouse AUTO_INCREMENT=1;
+
+DELETE FROM pos_invoice;
+ALTER TABLE pos_invoice AUTO_INCREMENT=1;
+DELETE FROM pos_invoice_detail;
+ALTER TABLE pos_invoice_detail AUTO_INCREMENT=1;
+
+DELETE FROM po_invoice;
+ALTER TABLE po_invoice AUTO_INCREMENT=1;
+DELETE FROM po_invoice_detail;
+ALTER TABLE po_invoice_detail AUTO_INCREMENT=1;
+
+DELETE FROM po_payment;
+ALTER TABLE po_payment AUTO_INCREMENT=1;
+
+DELETE FROM po_receive;
+
+DELETE FROM price_level;
+ALTER TABLE price_level AUTO_INCREMENT=1;
+DELETE FROM price_level_per_item;
+ALTER TABLE price_level_per_item AUTO_INCREMENT=1;
+
+DELETE FROM salesrep;
+ALTER TABLE salesrep AUTO_INCREMENT=1;
+INSERT INTO `salesrep` (`id`, `salesrep_name`, `salesrep_title`, `salesrep_phone`, `salesrep_mobile`, `salesrep_mobile2`, `salesrep_email`, `salesrep_status`, `salesrep_image`, `salesrep_address`, `salesrep_created`, `salesrep_updated`) VALUES
+(1, 'Default Rep', 1, '', '', '', '', 1, '', '', '2013-10-02 00:00:00', '2013-10-02 16:32:28');
+
+DELETE FROM salesrep_detail;
+ALTER TABLE salesrep_detail AUTO_INCREMENT=1;
+
+
+DELETE FROM sale_payment;
+ALTER TABLE sale_payment AUTO_INCREMENT=1;
+
+DELETE FROM sale_pick;
+ALTER TABLE sale_pick AUTO_INCREMENT=1;
+
+DELETE FROM stock_adjust;
+ALTER TABLE stock_adjust AUTO_INCREMENT=1;
+
+
+DELETE FROM stock_transfer;
+ALTER TABLE stock_transfer AUTO_INCREMENT=1;
+
+DELETE FROM units;
+ALTER TABLE units AUTO_INCREMENT=1;
+INSERT INTO `units`(`name`, `date_added`) VALUES ("ea",NOW());
+
+DELETE FROM uom_barcodes;
+ALTER TABLE uom_barcodes AUTO_INCREMENT=1;
+
+DELETE FROM unit_mapping;
+ALTER TABLE unit_mapping AUTO_INCREMENT=1;
+
+DELETE FROM vendor;
+ALTER TABLE vendor AUTO_INCREMENT=1;
+
+DELETE FROM warehouses;
+ALTER TABLE warehouses AUTO_INCREMENT=1;
+INSERT INTO `warehouses` (`warehouse_id`, `warehouse_name`, `warehouse_code`, `warehouse_contant_name`, `warehouse_phone`, `warehouse_mobile`, `warehouse_ddi_number`, `warehouse_isdefault`, `warehouse_address`, `warehouse_street`, `warehouse_city`, `warehouse_state`, `warehouse_country`, `warehouse_postalcode`, `warehouse_isactive`, `last_changed`) VALUES
+(1, 'Default Location', 'WAR0001', '', '', '', '', 1, '', '', '', '', '', '', 1, '2013-04-08 00:00:00');
+
+
+DELETE FROM warehouse_reorder;
+ALTER TABLE warehouse_reorder AUTO_INCREMENT=1;
+ALTER TABLE `customer` ADD `cust_cnic` VARCHAR(30) NOT NULL AFTER `cust_address`;
+
+

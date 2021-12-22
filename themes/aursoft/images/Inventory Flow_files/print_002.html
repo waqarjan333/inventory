@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang=""><head>
+<title>Sale invoice </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="print_data/print.css">    
+    <script>
+        function batchPrint(){
+           if(jsPrintSetup){
+            //jsPrintSetup.setOption('printSilent', 1);
+            jsPrintSetup.print();            
+            jsPrintSetup.clearSilentPrint();
+           }
+        }
+    </script>
+</head>
+<body>
+    <div class="dot-matrix">  
+        <div class="inv-header">
+            <div class="headbar logo"><img src="print_data/aursoft_logo_size3.png" class="invoice-logo">Afghan Cold Drinks and Bakery</div>
+            <div class="headbar inv-head" style="font-size:16px;font-weight: bold;">Invoice</div>
+        </div>
+        <div style="clear:both">
+            <table class="header-table">
+                <tbody><tr>
+                    <td width="180px">
+                        <div class="block">
+                            <b>Sharja Trade Center Main GT Road Timergara</b> <br>
+                                                            <b>Tel.: </b>0514578328<br>
+                                
+                                
+                                
+                        </div>
+                    </td>
+                    <td>
+                        <div class="block bottom-space">
+                            <b>Invoice Date: <span class="invoice-date"></span></b><br>
+                            <b>Printed Date: <span class="print-invoice-date"></span></b>
+                        </div>
+                        <div class="block bottom-space">
+                            <b>Invoice #: <span class="invoice-no"></span></b>
+                        </div>
+                        <div class="block bottom-space">
+                            <b>Bill To: <span class="bill_to"></span></b>
+                        </div>
+                        <div class="block bottom-space">
+                            <b>Region: <span class="region_customer"></span></b>
+                        </div>
+                    </td>
+
+                </tr>
+            </tbody></table> 
+        </div>
+        <b class="top-divider">------------------------------------------------------------------------------------------------------</b>       
+        <div class="invoice-body">
+             <table class="inv-heading">
+                 <thead>
+                <tr> 
+                    <th class="td-sno" width="20px">
+                        S No.
+                    <div>----------</div> 
+                    </th>                                            
+                    <th class="td-description" width="80%">
+                        Description
+                    <div>---------------------------------------------------</div> 
+                    </th>                                            
+                     <th class="td-qty">
+                        Qty
+                        <div>------------</div>
+                    </th>   
+                    <th class="td-rate">
+                        Rate
+                        <div>----------</div>
+                    </th>
+                    <th class="td-amount" width="80px">Amount
+                        <div>-----------</div>
+                    </th>
+                </tr>                                    
+                </thead>
+                <tbody class="receipt-large-body"></tbody>                            
+                <tfoot>
+                <tr><td colspan="2"><div>------------------------------------------------------------------</div> <div class="total_text"> Total:</div></td>
+                <td><div>------------</div><div class="total_qty">1</div></td>
+                <td><div>----------</div><div>&nbsp;</div></td>
+                <td><div>-----------</div> <div class="total_amount">122</div></td>
+                </tr></tfoot>
+             </table>
+            <div class="bottom-divider">------------------------------------------------------------------------------------------------------------------------------------------------------</div>            
+            <table class="total_table" align="right">
+                <tbody>
+                    <tr>
+                       <td>Total Qty:</td><td class="pos-right-align sub_total_qty"></td>
+                    </tr>
+                    <tr>
+                       <td>Sub Total:</td><td class="pos-right-align sub_total"></td>
+                    </tr>
+                    <tr><td>Discount:</td><td class="pos-right-align discount">
+                        0.00 Rs.
+                    </td></tr>
+                    <tr class="emph"><td>Total:</td><td class="pos-right-align total_recpt_large">
+                        0.00 Rs.
+                    </td></tr>
+                </tbody>
+            </table>
+        </div>
+         <div class="thank_message">                                                               
+            <div class="aursoft_marekting">
+                -------------------------<br>
+                Developed by Aursoft <br>
+                http://www.aursoft.com
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="print_data/jquery.js"></script> 
+
+    </body></html>
